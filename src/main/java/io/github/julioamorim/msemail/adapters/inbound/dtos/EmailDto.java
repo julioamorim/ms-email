@@ -1,4 +1,4 @@
-package io.github.julioamorim.msemail.dtos;
+package io.github.julioamorim.msemail.adapters.inbound.dtos;
 
 import lombok.Data;
 

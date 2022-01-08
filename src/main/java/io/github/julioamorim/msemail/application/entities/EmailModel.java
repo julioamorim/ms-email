@@ -1,6 +1,6 @@
-package io.github.julioamorim.msemail.models;
+package io.github.julioamorim.msemail.application.entities;
 
-import io.github.julioamorim.msemail.enums.StatusEmail;
+import io.github.julioamorim.msemail.application.entities.enums.StatusEmail;
 import lombok.Data;
 
 import javax.persistence.*;

@@ -1,8 +1,8 @@
-package io.github.julioamorim.msemail.controllers;
+package io.github.julioamorim.msemail.adapters.inbound.controllers;
 
-import io.github.julioamorim.msemail.dtos.EmailDto;
-import io.github.julioamorim.msemail.models.EmailModel;
-import io.github.julioamorim.msemail.services.EmailService;
+import io.github.julioamorim.msemail.adapters.inbound.dtos.EmailDto;
+import io.github.julioamorim.msemail.application.entities.EmailModel;
+import io.github.julioamorim.msemail.application.services.EmailServiceImpl;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,7 +17,7 @@ import javax.validation.Valid;
 public class EmailController {
 
     @Autowired
-    EmailService emailService;
+    EmailServiceImpl emailService;
 
     @PostMapping("/sending-email")
     public ResponseEntity<EmailModel> sendingEmail(@RequestBody @Valid EmailDto emailDto) {
